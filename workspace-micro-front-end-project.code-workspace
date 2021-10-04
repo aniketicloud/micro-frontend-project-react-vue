@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "packages\\container"
+		},
+		{
+			"path": "packages\\auth"
+		},
+		{
+			"path": "packages\\dashboard"
+		},
+		{
+			"path": "packages\\marketing"
+		}
+	],
+	"settings": {}
+}
