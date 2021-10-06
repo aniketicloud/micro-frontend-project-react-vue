@@ -12,7 +12,8 @@ const prodConfig = {
   // instead of devServer, here it will be output file that has to be deployed
   output: {
     // changing the name of output everytime, to avoid caching issue
-    filename: '[name].[contenthash].js'
+    filename: '[name].[contenthash].js',
+    publicPath: '/container/latest/'
   },
   plugins: [
     new ModuleFederationPlugin({
