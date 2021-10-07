@@ -1,3 +1,3 @@
 # Host app
 
-AWS Region - ap-south-1
+AWS Region - ap-south-1.
