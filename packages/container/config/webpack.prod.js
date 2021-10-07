@@ -6,7 +6,7 @@ const packageJson = require('../package.json');
 const domain = process.env.PRODUCTION_DOMAIN;
 
 const prodConfig = {
-  // production mode is slow, but it optimizes code/packages and minifies js
+  // production mode is slow, but it optimizes code/packages and minifies js.
   mode: 'production',
 
   // instead of devServer, here it will be output file that has to be deployed
