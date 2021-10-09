@@ -23,7 +23,7 @@ const prodConfig = {
         // location of child app remoteEntry.js file must be known at BUILD TIME
         // Hence, using domain
         // !important: WE ARE ASSUMING THAT remoteEntry.js file will be inside *marketing* folder
-        marketing: `marketing@${domain}/marketing/remoteEntry.js`,
+        marketing: `marketing@${domain}/marketing/latest/remoteEntry.js`,
       },
       shared: packageJson.dependencies,
     }),
