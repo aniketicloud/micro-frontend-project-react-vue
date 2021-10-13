@@ -6,12 +6,18 @@ export default () => {
   const ref = useRef(null);
 
   const history = useHistory();
-  console.log({ history });
 
   useEffect(() => {
     mount(ref.current, {
       onNavigate: ({ pathname: nextPathname }) => {
-        history.push(nextPathname);
+        // nextPathname is path inside remote app i.e. marketing app
+        // this below pathname is current path inside container app
+        const { pathname } = history.location;
+
+        // to remove infinite loop, adding condition
+        if (pathname !== nextPathname) {
+          history.push(nextPathname);
+        }
       },
     });
   });
