@@ -5,8 +5,6 @@ import {
   createGenerateClassName,
 } from '@material-ui/core/styles';
 
-// import Landing from './components/Landing';
-// import Pricing from './components/Pricing';
 import Signin from './components/Signin';
 import Signup from './components/Signup';
 
