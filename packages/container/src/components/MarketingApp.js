@@ -9,6 +9,7 @@ export default () => {
 
   useEffect(() => {
     const { onParentNavigate } = mount(ref.current, {
+      initialPath: history.location.pathname,
       onNavigate: ({ pathname: nextPathname }) => {
         // nextPathname is path inside remote app i.e. marketing app
         // this below pathname is current path inside container app
