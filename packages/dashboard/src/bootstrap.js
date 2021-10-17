@@ -1,6 +1,10 @@
 import { createApp } from 'vue';
 import Dashboard from './components/Dashboard.vue';
 
+// !! Not used nested routing in Dashboard
+// !! But if used then be careful about Roouting in microfrontend
+// !? currently I used BrowserHistory in Host, MemoryHistory in Remotes
+
 // Mount function to start up the app
 const mount = (el) => {
   const app = createApp(Dashboard);
