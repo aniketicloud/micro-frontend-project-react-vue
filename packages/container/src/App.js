@@ -18,7 +18,7 @@ const generateClassName = createGenerateClassName({
   productionPrefix: 'co',
 });
 
-// ! accsing history from <BrowserHistory /> is giving so many challenges, specifically for this component
+// !! accsing history from <BrowserHistory /> is giving so many challenges, specifically for this component
 // ? read how <BrowserHistory / works and how <Router/> creates history
 // Thats' why I am creating history manually, bringing that into generic <Router/>
 // So, This is more related to 'react-router-dom', and nothing to micro frontend
