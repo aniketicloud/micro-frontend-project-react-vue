@@ -24,6 +24,7 @@ const prodConfig = {
         // Hence, using domain
         // !important: WE ARE ASSUMING THAT remoteEntry.js file will be inside *marketing* folder
         marketing: `marketing@${domain}/marketing/latest/remoteEntry.js`,
+        auth: `auth@${domain}/auth/latest/remoteEntry.js`,
       },
       shared: packageJson.dependencies,
     }),
