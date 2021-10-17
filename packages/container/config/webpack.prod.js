@@ -13,7 +13,7 @@ const prodConfig = {
   output: {
     // changing the name of output everytime, to avoid caching issue
     filename: '[name].[contenthash].js',
-    publicPath: '/container/latest/'
+    publicPath: '/container/latest/',
   },
   plugins: [
     new ModuleFederationPlugin({
@@ -25,6 +25,7 @@ const prodConfig = {
         // !important: WE ARE ASSUMING THAT remoteEntry.js file will be inside *marketing* folder
         marketing: `marketing@${domain}/marketing/latest/remoteEntry.js`,
         auth: `auth@${domain}/auth/latest/remoteEntry.js`,
+        dashboard: `dashboard${domain}/dashboard/latest/remoteEntry.js`,
       },
       shared: packageJson.dependencies,
     }),
